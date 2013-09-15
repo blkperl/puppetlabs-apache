@@ -23,7 +23,7 @@ class apache::service (
 
   service { 'httpd':
     ensure => $service_enable,
-    name   => $apache::apache_name,
+    name   => $apache::params::apache_name,
     enable => $service_enable,
   }
 }
